@@ -2,10 +2,7 @@
   "name": "fuse-angular-filemanager",
   "version": "1.5.1",
   "description": "A very smart filemanager to manage your files in the browser.",
-  "main": [
-    "dist/angular-filemanager.min.js",
-    "dist/angular-filemanager.min.css"
-  ],
+  "main": "src/app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
