@@ -1,241 +1,160 @@
 body {
   font-size: 14px;
-  height: 100vh;
-}
+  height: 100vh; }
 
 *,
 *:focus {
-  outline: 0!important;
-}
+  outline: 0 !important; }
 
-.navbar {
+#fileManagerParent .navbar {
   min-height: 32px;
   margin-bottom: 0;
   border: 0;
   border-radius: 0;
-  color: #fff;
-}
-
-.navbar .navbar-collapse {
+  color: #fff; }
+#fileManagerParent .navbar .navbar-collapse {
   overflow: visible;
-  padding: 0;
-}
-
-.navbar .navbar-toggle {
-  padding: 5px 10px;
-}
-
-.navbar .navbar-brand {
+  padding: 0; }
+#fileManagerParent .navbar .navbar-toggle {
+  padding: 5px 10px; }
+#fileManagerParent .navbar .navbar-brand {
   font-size: inherit;
   height: 55px;
-  line-height: 100%;
-}
-
-.btn.btn-default {
+  line-height: 100%; }
+#fileManagerParent .btn.btn-default {
   color: #444;
-  background-color: #FAFAFA;
-}
-
-.btn {
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .26);
+  background-color: #FAFAFA; }
+#fileManagerParent .btn {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
   font-weight: 500;
   letter-spacing: .01em;
-  border: none;
-}
-
-textarea.code {
+  border: none; }
+#fileManagerParent textarea.code {
   font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
   font-size: 13px;
   min-height: 250px;
   resize: vertical;
-  color: #000;
-}
-
-.sub-header {
+  color: #000; }
+#fileManagerParent .sub-header {
   padding-bottom: 10px;
-  border-bottom: 1px solid #eee;
-}
-
-.sidebar {
+  border-bottom: 1px solid #eee; }
+#fileManagerParent .sidebar {
   display: none;
   background: #fafafa;
   margin-top: 2px;
   padding: 0;
   overflow-x: hidden;
   overflow-y: auto;
-  border-right: 1px solid #eee;
-}
-
-.btn-go-back {
-  margin-top: -5px;
-}
-
-.nav-sidebar {
+  border-right: 1px solid #eee; }
+#fileManagerParent .btn-go-back {
+  margin-top: -5px; }
+#fileManagerParent .nav-sidebar {
   margin-right: -21px;
   margin-bottom: 20px;
-  margin-left: -20px;
-}
-
-
-.nav-sidebar > li > a {
+  margin-left: -20px; }
+#fileManagerParent .nav-sidebar > li > a {
   color: #7a7a7a;
-  padding: 7px 0 7px 16px;
-}
-
-
-.nav-sidebar> li > a:hover, 
-.nav-sidebar> li > a:focus {
+  padding: 7px 0 7px 16px; }
+#fileManagerParent .nav-sidebar > li > a:hover,
+#fileManagerParent .nav-sidebar > li > a:focus {
   background: none;
-  color: #1378b9;
-}
-
-.nav-sidebar > li.active > a {
-  color: #2196F3;
-}
-
-
-.main {
-  padding: 0;
-}
-
-.main .page-header {
-  margin-top: 0;
-}
-
-.file-tree ul.nav.nav-sidebar {
+  color: #1378b9; }
+#fileManagerParent .nav-sidebar > li.active > a {
+  color: #2196F3; }
+#fileManagerParent .main {
+  padding: 0; }
+#fileManagerParent .main .page-header {
+  margin-top: 0; }
+#fileManagerParent .file-tree ul.nav.nav-sidebar {
   margin: 0;
   padding: 0;
-  padding-left: 12px;
-}
-
-.file-tree ul.nav.nav-sidebar:first-child {
-  padding-left: 0;
-}
-
-.file-tree ul.nav.nav-sidebar.file-tree-root > li {
+  padding-left: 12px; }
+#fileManagerParent .file-tree ul.nav.nav-sidebar:first-child {
+  padding-left: 0; }
+#fileManagerParent .file-tree ul.nav.nav-sidebar.file-tree-root > li {
   border-left: none;
-  padding-left: 0px;
-}
-
-.table td {
-  vertical-align: middle;
-}
-
-#context-menu {
+  padding-left: 0px; }
+#fileManagerParent .table td {
+  vertical-align: middle; }
+#fileManagerParent #context-menu {
   position: absolute;
   display: none;
-  z-index: 9999;
-}
-
-.iconset {
-  padding: 10px;
-}
-
-.col-120 {
+  z-index: 9999; }
+#fileManagerParent .iconset {
+  padding: 10px; }
+#fileManagerParent .col-120 {
   width: 100px;
   max-height: 100px;
   float: left;
   margin-bottom: 9px;
-  margin-right: 9px;
-}
-
-.col-120:last-child {
-  margin-right: 0;
-}
-
-.noselect {
-  -webkit-touch-callout: none; /* iOS Safari */
-  -webkit-user-select: none;   /* Chrome/Safari/Opera */
-  -khtml-user-select: none;    /* Konqueror */
-  -moz-user-select: none;      /* Firefox */
-  -ms-user-select: none;       /* IE/Edge */
-  user-select: none;           /* non-prefixed version, currently */
-}
-
-.iconset .thumbnail {
+  margin-right: 9px; }
+#fileManagerParent .col-120:last-child {
+  margin-right: 0; }
+#fileManagerParent .noselect {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Chrome/Safari/Opera */
+  -khtml-user-select: none;
+  /* Konqueror */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* IE/Edge */
+  user-select: none;
+  /* non-prefixed version, currently */ }
+#fileManagerParent .iconset .thumbnail {
   border-radius: 0;
   overflow: hidden;
   margin: 0;
   padding: 0;
   padding: 10px 0;
   border: none;
-  background: none;
-}
-
-.table-files .selected,
-.iconset .thumbnail.selected {
-  background: #2196F3;
-}
-
-.iconset .thumbnail.selected,
-.table-files .selected td,
-.table-files .selected td a {
-  color:#fff;
-}
-
-.iconset .thumbnail .item-icon {
-  font-size: 32px;
-}
-
-.detail-sources {
+  background: none; }
+#fileManagerParent .table-files .selected,
+#fileManagerParent .iconset .thumbnail.selected {
+  background: #2196F3; }
+#fileManagerParent .iconset .thumbnail.selected,
+#fileManagerParent .table-files .selected td,
+#fileManagerParent .table-files .selected td a {
+  color: #fff; }
+#fileManagerParent .iconset .thumbnail .item-icon {
+  font-size: 32px; }
+#fileManagerParent .detail-sources {
   text-overflow: ellipsis;
   overflow: hidden;
-  word-wrap: break-word;
-}
-
-::-webkit-scrollbar {
+  word-wrap: break-word; }
+#fileManagerParent ::-webkit-scrollbar {
   width: 10px;
   height: 10px;
   background-color: #fff;
-  box-shadow: inset 1px 1px 0 rgba(0, 0, 0, .1), inset -1px -1px 0 rgba(0, 0, 0, .07);
-}
-
-::-webkit-scrollbar:hover {
-  background-color: #eee;
-}
-
-::-webkit-scrollbar-thumb {
+  box-shadow: inset 1px 1px 0 rgba(0, 0, 0, 0.1), inset -1px -1px 0 rgba(0, 0, 0, 0.07); }
+#fileManagerParent ::-webkit-scrollbar:hover {
+  background-color: #eee; }
+#fileManagerParent ::-webkit-scrollbar-thumb {
   min-height: 0.8em;
   min-width: 0.8em;
-  background-color: rgba(0, 0, 0, .2);
-  box-shadow: inset 1px 1px 0 rgba(0, 0, 0, .1), inset -1px -1px 0 rgba(0, 0, 0, .07);
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background-color: #bbb;
-}
-
-::-webkit-scrollbar-thumb:active {
-  background-color: #888;
-}
-
-.dropdown-menu {
-  font-size: 14px;
-}
-
-.dropdown-menu > li > a {
-  padding: 6px 20px;
-}
-
-.dropdown-menu > li > a > i {
-  margin-right: 4px;
-}
-
-.dropdown-menu.dropdown-right-click {
+  background-color: rgba(0, 0, 0, 0.2);
+  box-shadow: inset 1px 1px 0 rgba(0, 0, 0, 0.1), inset -1px -1px 0 rgba(0, 0, 0, 0.07); }
+#fileManagerParent ::-webkit-scrollbar-thumb:hover {
+  background-color: #bbb; }
+#fileManagerParent ::-webkit-scrollbar-thumb:active {
+  background-color: #888; }
+#fileManagerParent .dropdown-menu {
+  font-size: 14px; }
+#fileManagerParent .dropdown-menu > li > a {
+  padding: 6px 20px; }
+#fileManagerParent .dropdown-menu > li > a > i {
+  margin-right: 4px; }
+#fileManagerParent .dropdown-menu.dropdown-right-click {
   display: block;
   position: static;
-  margin-bottom: 5px; 
-}
-
-.dropdown-menu.dropdown-right-click .divider {
-  margin: 3px 0;
-}
-
-.upload-dragover .main {
-  opacity: .4;
-}
-
-.upload-dragover:before {
+  margin-bottom: 5px; }
+#fileManagerParent .dropdown-menu.dropdown-right-click .divider {
+  margin: 3px 0; }
+#fileManagerParent .upload-dragover .main {
+  opacity: .4; }
+#fileManagerParent .upload-dragover:before {
   content: "\e198";
   position: absolute;
   left: 50%;
@@ -244,109 +163,67 @@ textarea.code {
   z-index: 100;
   color: #2196F3;
   font-size: 8em;
-  font-family: 'Glyphicons Halflings';
-}
-
-.upload-list {
-  margin-top: 20px;
-}
-
-.spinner-wrapper {
+  font-family: 'Glyphicons Halflings'; }
+#fileManagerParent .upload-list {
+  margin-top: 20px; }
+#fileManagerParent .spinner-wrapper {
   margin: 0 auto;
   text-align: center;
-  margin-top: 8%;
-}
-
-a:hover,
-a:active,
-a:focus,
-table th > a:hover,
-table th > a:active,
-table th > a:focus {
-  text-decoration: none;
-}
-
-.sortorder:after {
+  margin-top: 8%; }
+#fileManagerParent a:hover,
+#fileManagerParent a:active,
+#fileManagerParent a:focus,
+#fileManagerParent table th > a:hover,
+#fileManagerParent table th > a:active,
+#fileManagerParent table th > a:focus {
+  text-decoration: none; }
+#fileManagerParent .sortorder:after {
   color: #2196f3;
-  content: '\25bc';
-}
-
-.sortorder.reverse:after {
+  content: '\25bc'; }
+#fileManagerParent .sortorder.reverse:after {
   color: #2196f3;
-  content: '\25b2';
-}
-
-[ng\:cloak], [ng-cloak],
-[data-ng-cloak], [x-ng-cloak],
-.ng-cloak, .x-ng-cloak {
-  display: none !important;
-}
-
-.mr2 {
-  margin-right: 2px;
-}
-
-.mr5 {
-  margin-right: 5px;
-}
-
-.mt10 {
-  margin-top: 10px;
-}
-
-.mb0 {
-  margin-bottom: 0;
-}
-
-.pointer {
-  cursor: pointer;
-}
-
-.block {
-  display: block;
-}
-
-.ellipsis {
+  content: '\25b2'; }
+#fileManagerParent [ng\:cloak], #fileManagerParent [ng-cloak],
+#fileManagerParent [data-ng-cloak], #fileManagerParent [x-ng-cloak],
+#fileManagerParent .ng-cloak, #fileManagerParent .x-ng-cloak {
+  display: none !important; }
+#fileManagerParent .mr2 {
+  margin-right: 2px; }
+#fileManagerParent .mr5 {
+  margin-right: 5px; }
+#fileManagerParent .mt10 {
+  margin-top: 10px; }
+#fileManagerParent .mb0 {
+  margin-bottom: 0; }
+#fileManagerParent .pointer {
+  cursor: pointer; }
+#fileManagerParent .block {
+  display: block; }
+#fileManagerParent .ellipsis {
   overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.bold {
-  font-weight: bold;
-}
-
-.main {
-  overflow-y: auto;
-}
-
+  white-space: nowrap; }
+#fileManagerParent .bold {
+  font-weight: bold; }
+#fileManagerParent .main {
+  overflow-y: auto; }
 @media (min-width: 768px) {
-  .main {
-    padding-right: 0;
-    padding-left: 0;
-  }
-
-  /* The view should fill all available vertical space */
-  angular-filemanager > div,.row,.main,.sidebar {
-    height: 100%;
-  }
-
-  .container-fluid {
-    height: -webkit-calc(100% - 58px);
-    height: -moz-calc(100% - 58px);
-    height: calc(100% - 58px);
-  }
-
-  .sidebar {
-    display: block;
-  }
-}
-
-.selected-file-details {
-  padding-left: 20px;
-}
-
-.item-extension::after {
+  #fileManagerParent {
+    /* The view should fill all available vertical space */ }
+    #fileManagerParent .main {
+      padding-right: 0;
+      padding-left: 0; }
+    #fileManagerParent angular-filemanager > div, #fileManagerParent .row, #fileManagerParent .main, #fileManagerParent .sidebar {
+      height: 100%; }
+    #fileManagerParent .container-fluid {
+      height: -webkit-calc(100% - 58px);
+      height: -moz-calc(100% - 58px);
+      height: calc(100% - 58px); }
+    #fileManagerParent .sidebar {
+      display: block; } }
+#fileManagerParent .selected-file-details {
+  padding-left: 20px; }
+#fileManagerParent .item-extension::after {
   font-family: "Roboto","Helvetica Neue",Helvetica,Arial,sans-serif;
   content: attr(data-ext);
   left: 4px;
@@ -354,103 +231,68 @@ table th > a:focus {
   color: #fff;
   font-size: 9px;
   text-transform: uppercase;
-  top: 21px;
-}
-
-.selected .item-extension::after {
-  color: #2196F3;
-}
-
-.form-control.search-input {
+  top: 21px; }
+#fileManagerParent .selected .item-extension::after {
+  color: #2196F3; }
+#fileManagerParent .form-control.search-input {
   max-width: 20em;
-  display: inline;
-}
-
-.like-code {
-  display: inline;
-}
-
-.point {
+  display: inline; }
+#fileManagerParent .like-code {
+  display: inline; }
+#fileManagerParent .point {
   margin-right: 8px;
-  font-size: 10px;
-}
-
-.navbar .btn.btn-flat {
+  font-size: 10px; }
+#fileManagerParent .navbar .btn.btn-flat {
   padding: 2px;
   width: 32px;
   height: 30px;
-  margin-left: 5px;
-}
-
-.navbar-inverse .navbar-toggle .icon-bar {
-  background: #fff;
-}
-
-.navbar-inverse .navbar-form input[type="text"] {
+  margin-left: 5px; }
+#fileManagerParent .navbar-inverse .navbar-toggle .icon-bar {
+  background: #fff; }
+#fileManagerParent .navbar-inverse .navbar-form input[type="text"] {
   color: #7a7a7a;
   box-shadow: none;
-  margin: 0 10px;
-}
-
-.navbar .navbar-form {
+  margin: 0 10px; }
+#fileManagerParent .navbar .navbar-form {
   border-bottom: none;
   border-top: none;
   box-shadow: none;
   padding: 0;
-  margin: 12px 0;
-}
-
-.breadcrumb {
-  background: none; 
+  margin: 12px 0; }
+#fileManagerParent .breadcrumb {
+  background: none;
   padding: 0;
   font-size: 17px;
   margin: 12px 0;
   overflow: hidden;
-  max-height: 30px
-}
-
-.breadcrumb>.active,
-.breadcrumb a {
-  color: #fff !important;
-}
-
-.breadcrumb>li+li:before {
+  max-height: 30px; }
+#fileManagerParent .breadcrumb > .active,
+#fileManagerParent .breadcrumb a {
+  color: #fff !important; }
+#fileManagerParent .breadcrumb > li + li:before {
   font-family: 'Glyphicons Halflings';
   content: "\e080";
   font-size: 12px;
-  color: #fff;
-}
-
-.scrollable-menu {
+  color: #fff; }
+#fileManagerParent .scrollable-menu {
   height: auto;
   max-height: 200px;
-  overflow-x: hidden;
-}
-
-.btn.btn-flat {
+  overflow-x: hidden; }
+#fileManagerParent .btn.btn-flat {
   background: none;
-  color: #fff;
-}
-
-.btn-group.open > .btn-flat,
-.btn.btn-flat,
-.btn.btn-flat:active {
-  box-shadow: none;
-}
-
-.btn.btn-flat > i {
+  color: #fff; }
+#fileManagerParent .btn-group.open > .btn-flat,
+#fileManagerParent .btn.btn-flat,
+#fileManagerParent .btn.btn-flat:active {
+  box-shadow: none; }
+#fileManagerParent .btn.btn-flat > i {
   font-size: 18px;
   width: 18px;
   height: 18px;
-  line-height: 100%;
-}
+  line-height: 100%; }
+#fileManagerParent .angular-filemanager .nav-sidebar i.glyphicon {
+  font-size: 10px !important; }
+#fileManagerParent .angular-filemanager .nav-sidebar i.glyphicon-folder-open, #fileManagerParent .angular-filemanager .nav-sidebar i.glyphicon-folder-close {
+  font-size: 14px !important; }
 
-.angular-filemanager .nav-sidebar i.glyphicon {
-  font-size:10px !important;
-}
-
-.angular-filemanager .nav-sidebar i.glyphicon-folder-open,.angular-filemanager .nav-sidebar i.glyphicon-folder-close {
-  font-size:14px !important;
-}
-
-
+/*# sourceMappingURL=main.css.map */
