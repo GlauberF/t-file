@@ -7,7 +7,7 @@
   ],
   "description": "A very smart filemanager to manage your files in the browser.",
   "main": [
-    "bower_components/bootswatch/paper/bootstrap.min.css".
+    "bower_components/bootswatch/paper/bootstrap.min.css",
     "dist/angular-filemanager.min.css",
     "dist/angular-filemanager.min.js"    
   ],
