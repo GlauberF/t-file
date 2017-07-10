@@ -26,7 +26,7 @@
 
 ### Use in your existing project
 **1) Install and use**
-```bower install --save angular-filemanager```
+```bower install --save https://github.com/GlauberF/gf-file.git```
 
 **2) Include the dependencies in your project**
 ```html
