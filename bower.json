@@ -1,11 +1,11 @@
 {
   "name": "fuse-angular-filemanager",
   "version": "1.5.1",
-  "homepage": "https://github.com/sumit2201/fuse-angular-filemanager",
+  "homepage": "https://github.com/GlauberF/gf-file",
   "authors": [
-    "Jonas Sciangula Street <joni2back@gmail.com>"
+    "Glauber Funez"
   ],
-  "description": "A very smart filemanager to manage your files in the browser.",
+  "description": "A filemanager to vimbo.",
   "main": [
     "bower_components/bootswatch/paper/bootstrap.min.css",
     "dist/angular-filemanager.min.css",

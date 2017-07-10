@@ -19,4 +19,4 @@ C:/Ruby24/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Errno::ENOENT: No such file or directory @ rb_sysopen - animataion.scss"; }
+  /*content: "Errno::ENOENT: No such file or directory @ rb_sysopen - animataion.scss"; }*/

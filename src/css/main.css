@@ -220,7 +220,9 @@ body {
       height: -moz-calc(100% - 58px);
       height: calc(100% - 58px); }
     #fileManagerParent .sidebar {
-      display: block; } }
+      display: block; 
+      margin-bottom: -5000px; /* any large number will do */
+      padding-bottom: 5000px;} }
 #fileManagerParent .selected-file-details {
   padding-left: 20px; }
 #fileManagerParent .item-extension::after {

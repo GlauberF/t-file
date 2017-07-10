@@ -1,24 +1,24 @@
 {
   "name": "fuse-angular-filemanager",
   "version": "1.5.1",
-  "description": "A very smart filemanager to manage your files in the browser.",
+  "description": "A filemanager to vimbo.",
   "main": "src/app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sumit2201/fuse-angular-filemanager.git"
+    "url": "git+https://github.com/GlauberF/gf-file.git"
   },
   "keywords": [
     "filemanager"
   ],
-  "author": "Jonas Sciangula Street",
+  "author": "Glauber Funez",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/sumit2201/fuse-angular-filemanager/issues"
+    "url": "https://github.com/GlauberF/gf-file/issues"
   },
-  "homepage": "https://github.com/sumit2201/fuse-angular-filemanager.git#readme",
+  "homepage": "https://github.com/GlauberF/gf-file",
   "devDependencies": {
     "bower": "^1.7.9",
     "del": "^2.2.0",
