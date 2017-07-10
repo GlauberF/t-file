@@ -119,7 +119,9 @@ body {
 #fileManagerParent .table-files .selected td a {
   color: #fff; }
 #fileManagerParent .iconset .thumbnail .item-icon {
-  font-size: 32px; }
+  /*font-size: 32px;*/
+  font-size: 25px; 
+}
 #fileManagerParent .detail-sources {
   text-overflow: ellipsis;
   overflow: hidden;
@@ -228,12 +230,16 @@ body {
 #fileManagerParent .item-extension::after {
   font-family: "Roboto","Helvetica Neue",Helvetica,Arial,sans-serif;
   content: attr(data-ext);
-  left: 4px;
+  /*left: 4px;*/
+  left: 3px;
   position: absolute;
   color: #fff;
-  font-size: 9px;
+  /*font-size: 9px;*/
+  font-size: 8px;
   text-transform: uppercase;
-  top: 21px; }
+  top: 13px;
+  /*top: 21px; */
+}
 #fileManagerParent .selected .item-extension::after {
   color: #2196F3; }
 #fileManagerParent .form-control.search-input {
