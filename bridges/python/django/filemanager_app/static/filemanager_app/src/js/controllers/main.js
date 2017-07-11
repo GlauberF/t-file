@@ -119,6 +119,7 @@
         };
 
         $scope.smartClick = function(item) {
+            console.log('glauber smart click ---- ', item)
             var pick = $scope.config.allowedActions.pickFiles;
             if (item.isFolder()) {
                 return $scope.fileNavigator.folderClick(item);
@@ -145,9 +146,9 @@
 
         $scope.openImagePreview = function() {            
             var item = $scope.singleSelection();
+            console.log('glauber image preview ---- ', item)
             $scope.apiMiddleware.apiHandler.inprocess = true;
             $scope.modal('imagepreview', null, true)
-                console.log('glauber ---- ', item)
                 .find('#imagepreview-target')
                 .attr('src', $scope.apiMiddleware.getUrl(item))
                 .unbind('load error')
