@@ -143,10 +143,11 @@
             }
         };
 
-        $scope.openImagePreview = function() {
+        $scope.openImagePreview = function() {            
             var item = $scope.singleSelection();
             $scope.apiMiddleware.apiHandler.inprocess = true;
             $scope.modal('imagepreview', null, true)
+                cosole.log('glauber ---- ', item)
                 .find('#imagepreview-target')
                 .attr('src', $scope.apiMiddleware.getUrl(item))
                 .unbind('load error')
