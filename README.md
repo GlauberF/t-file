@@ -28,26 +28,6 @@
 **1) Install and use**
 ```bower install --save https://github.com/GlauberF/gf-file.git```
 
-**2) Include the dependencies in your project**
-```html
-<!-- third party -->
-  <script src="bower_components/angular/angular.min.js"></script>
-  <script src="bower_components/angular-translate/angular-translate.min.js"></script>
-  <script src="bower_components/jquery/dist/jquery.min.js"></script>
-  <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="bower_components/bootswatch/paper/bootstrap.min.css" />
-
-<!-- angular-filemanager -->
-  <link rel="stylesheet" href="dist/angular-filemanager.min.css">
-  <script src="dist/angular-filemanager.min.js"></script>
-```
-
-**3) Use the angular directive in your HTML**
-```html
-<angular-filemanager></angular-filemanager>
-```
-
-
 ---------
 
 ### Extending the configuration file
