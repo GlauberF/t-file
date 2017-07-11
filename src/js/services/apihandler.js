@@ -236,7 +236,7 @@
             
             var deferred = $q.defer();
             self.inprocess = true;
-            $http.post(url, {
+            $http.get(url, {
                 headers: {'Authorization': 'Bearer ' + localStorage.getItem('vimbo_token')}
             }).success(function(data) {
                 var bin = new $window.Blob([data]);
