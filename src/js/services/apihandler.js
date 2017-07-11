@@ -4,6 +4,8 @@
         function ($http, $q, $window, $translate, Upload) {
 
         $http.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
+        $http.defaults.headers.post.Authorization = 'Bearer ' + localStorage.getItem('vimbo_token');
+        $http.defaults.headers.get.Authorization = 'Bearer ' + localStorage.getItem('vimbo_token');
 
         var ApiHandler = function() {
             this.inprocess = false;
