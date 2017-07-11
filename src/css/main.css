@@ -190,7 +190,9 @@ body {
 #fileManagerParent .ng-cloak, #fileManagerParent .x-ng-cloak {
   display: none !important; }
 #fileManagerParent .mr2 {
-  margin-right: 2px; }
+  /*margin-right: 2px; */
+  margin-right: 9px; 
+}
 #fileManagerParent .mr5 {
   margin-right: 5px; }
 #fileManagerParent .mt10 {
@@ -270,10 +272,13 @@ body {
 #fileManagerParent .breadcrumb {
   background: none;
   padding: 0;
-  font-size: 17px;
+  font-size: 15px;
+  /*font-size: 17px;*/
   margin: 12px 0;
   overflow: hidden;
-  max-height: 30px; }
+  max-height: 30px;
+  font-weight: 300; 
+}
 #fileManagerParent .breadcrumb > .active,
 #fileManagerParent .breadcrumb a {
   color: #fff !important; }
