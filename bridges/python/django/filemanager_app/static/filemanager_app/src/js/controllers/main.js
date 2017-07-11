@@ -147,7 +147,7 @@
             var item = $scope.singleSelection();
             $scope.apiMiddleware.apiHandler.inprocess = true;
             $scope.modal('imagepreview', null, true)
-                cosole.log('glauber ---- ', item)
+                console.log('glauber ---- ', item)
                 .find('#imagepreview-target')
                 .attr('src', $scope.apiMiddleware.getUrl(item))
                 .unbind('load error')
