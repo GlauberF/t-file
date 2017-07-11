@@ -356,20 +356,5 @@
         $scope.isWindows = getQueryParam('server') === 'Windows';
         $scope.fileNavigator.refresh();
 
-    }])
-    .factory('authInterceptor2', function($location, $q, $window) {
-        return {
-            request: function(config) {
-            config.headers = config.headers || {};
-
-            config.headers.Authorization = 'Bearer ' + localStorage.getItem('vimbo_token');
-
-            return config;
-            }
-        };
-    })
-
-    .config(function($httpProvider) {
-    $httpProvider.interceptors.push('authInterceptor2');
-    });
+    }]);
 })(angular, jQuery);
