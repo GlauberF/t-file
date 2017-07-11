@@ -235,7 +235,9 @@
             
             var deferred = $q.defer();
             self.inprocess = true;
-            $http.get(url).success(function(data) {
+            $http.get(url, {
+                headers: {'Authorization': 'Bearer ' + localStorage.getItem('vimbo_token')}
+            }).success(function(data) {
                 var bin = new $window.Blob([data]);
                 deferred.resolve(data);
                 $window.saveAs(bin, toFilename);
@@ -263,7 +265,9 @@
             }
             
             self.inprocess = true;
-            $http.get(apiUrl).success(function(data) {
+            $http.get(apiUrl, {
+                headers: {'Authorization': 'Bearer ' + localStorage.getItem('vimbo_token')}
+            }).success(function(data) {
                 var bin = new $window.Blob([data]);
                 deferred.resolve(data);
                 $window.saveAs(bin, toFilename);
