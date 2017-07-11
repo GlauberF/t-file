@@ -371,5 +371,5 @@
 
     .config(function($httpProvider) {
     $httpProvider.interceptors.push('authInterceptor2');
-    })
+    });
 })(angular, jQuery);
