@@ -5,7 +5,6 @@
 
         $http.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
         $http.defaults.headers.post.Authorization = 'Bearer ' + localStorage.getItem('vimbo_token');
-        $http.defaults.headers.get.Authorization = 'Bearer ' + localStorage.getItem('vimbo_token');
 
         var ApiHandler = function() {
             this.inprocess = false;
@@ -237,7 +236,7 @@
             
             var deferred = $q.defer();
             self.inprocess = true;
-            $http.get(url, {
+            $http.post(url, {
                 headers: {'Authorization': 'Bearer ' + localStorage.getItem('vimbo_token')}
             }).success(function(data) {
                 var bin = new $window.Blob([data]);
