@@ -146,7 +146,6 @@
 
         $scope.openImagePreview = function() {
             var item = $scope.singleSelection();
-            // var empId = 
             $scope.apiMiddleware.apiHandler.inprocess = true;
             $scope.modal('imagepreview', null, true)
                 .find('#imagepreview-target')
@@ -156,7 +155,6 @@
                     $scope.apiMiddleware.apiHandler.inprocess = false;
                     $scope.$apply();
                 });
-                console.log('ttttttttt', $scope.apiMiddleware.getUrl(item));
         };
 
         $scope.openEditItem = function() {

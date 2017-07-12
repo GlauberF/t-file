@@ -226,7 +226,7 @@
             console.log(path);
             console.log('data path ', data.path);
             console.log(apiUrl);
-            console.log($.param(data));
+            console.log('acho aqui', $.param(path));
             return path;
         };
 
