@@ -222,7 +222,8 @@
                 action: 'download',
                 path: path
             };
-            return path && [apiUrl, $.param(data)].join('?');
+            // return path && [apiUrl, $.param(data)].join('?');
+            return path;
         };
 
         ApiHandler.prototype.download = function(apiUrl, itemPath, toFilename, downloadByAjax, forceNewWindow) {
