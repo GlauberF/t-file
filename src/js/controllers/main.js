@@ -119,7 +119,7 @@
         };
 
         $scope.smartClick = function(item) {
-            console.log(item);
+            console.log('DADOS ARQUIVO ', item);
             var pick = $scope.config.allowedActions.pickFiles;
             if (item.isFolder()) {
                 return $scope.fileNavigator.folderClick(item);
