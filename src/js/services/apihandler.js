@@ -223,11 +223,11 @@
                 path: path
             };
             // return path && [apiUrl, $.param(data)].join('?');
-            console.log(path);
+            console.log('tt', path && [apiUrl, $.param(data)].join('?'));
             console.log('data path ', data.path);
-            console.log(apiUrl);
-            console.log('acho aqui', $.param(path));
-            return path;
+            console.log('url', apiUrl);
+            console.log('data obj ', data);
+            return path && [apiUrl, $.param(data)].join('?');
         };
 
         ApiHandler.prototype.download = function(apiUrl, itemPath, toFilename, downloadByAjax, forceNewWindow) {
