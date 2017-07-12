@@ -218,10 +218,12 @@
         };
 
         ApiHandler.prototype.getUrl = function(apiUrl, path) {
+            jwtR = 'Bearer ' + localStorage.getItem('vimbo_token');
             var data = {
                 action: 'download',
                 path: path,
-                empId: window.localStorage.e
+                empId: window.localStorage.e,
+                jwt: jwtR
             };
             // return path && [apiUrl, $.param(data)].join('?');
             console.log('tt', path && [apiUrl, $.param(data)].join('?'));
