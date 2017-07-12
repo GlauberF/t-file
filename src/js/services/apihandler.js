@@ -223,7 +223,7 @@
                 action: 'download',
                 path: path,
                 empId: window.localStorage.e,
-                jwt: 'Bearer ' + window.localStorage.getItem('vimbo_token')
+                token: window.localStorage.getItem('vimbo_token')
             };
             // return path && [apiUrl, $.param(data)].join('?');
             console.log('tt', path && [apiUrl, $.param(data)].join('?'));
