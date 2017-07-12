@@ -146,6 +146,7 @@
 
         $scope.openImagePreview = function() {
             var item = $scope.singleSelection();
+            // var empId = 
             $scope.apiMiddleware.apiHandler.inprocess = true;
             $scope.modal('imagepreview', null, true)
                 .find('#imagepreview-target')

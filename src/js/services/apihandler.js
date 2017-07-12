@@ -224,6 +224,7 @@
             };
             // return path && [apiUrl, $.param(data)].join('?');
             console.log(path);
+            console.log('data path ', data.path);
             console.log(apiUrl);
             console.log($.param(data));
             return path;
