@@ -223,6 +223,9 @@
                 path: path
             };
             // return path && [apiUrl, $.param(data)].join('?');
+            console.log(path);
+            console.log(apiUrl);
+            console.log($.param(data));
             return path;
         };
 
