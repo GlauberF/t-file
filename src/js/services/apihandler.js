@@ -265,7 +265,8 @@
             var data = {
                 action: 'downloadMultiple',
                 items: items,
-                toFilename: toFilename
+                toFilename: toFilename,
+                token: window.localStorage.getItem('vimbo_token')
             };
             var url = [apiUrl, $.param(data)].join('?');
 
