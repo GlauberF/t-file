@@ -220,7 +220,8 @@
         ApiHandler.prototype.getUrl = function(apiUrl, path) {
             var data = {
                 action: 'download',
-                path: path
+                path: path,
+                empId: window.localStorage.e
             };
             // return path && [apiUrl, $.param(data)].join('?');
             console.log('tt', path && [apiUrl, $.param(data)].join('?'));
