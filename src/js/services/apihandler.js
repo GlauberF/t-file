@@ -4,7 +4,7 @@
         function ($http, $q, $window, $translate, Upload) {
 
         $http.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
-        $http.defaults.headers.post.Authorization = 'Bearer ' + localStorage.getItem('vimbo_token');
+        $http.defaults.headers.common['Authorization'] = 'Bearer ' + localStorage.getItem('vimbo_token');
 
         var ApiHandler = function() {
             this.inprocess = false;
@@ -14,10 +14,10 @@
 
         ApiHandler.prototype.deferredHandler = function(data, deferred, code, defaultMsg) {
             if (!data || typeof data !== 'object') {
-                this.error = 'Error %s - Bridge response error, please check the API docs or this ajax response.'.replace('%s', code);
+                this.error = 'Error %s - erro na resposta da API VIMBO(v-doc), aguarde estamos trabalhando para resolver.'.replace('%s', code);
             }
             if (code == 404) {
-                this.error = 'Error 404 - Backend bridge is not working, please check the ajax response.';
+                this.error = 'Error 404 - erro na resposta da API VIMBO(v-doc), aguarde estamos trabalhando para resolver.';
             }
             if (data.result && data.result.error) {
                 this.error = data.result.error;
@@ -49,7 +49,7 @@
             $http.post(apiUrl, data).success(function(data, code) {
                 dfHandler(data, deferred, code);
             }).error(function(data, code) {
-                dfHandler(data, deferred, code, 'Unknown error listing, check the response');
+                dfHandler(data, deferred, code, 'O servidor esta sofrendo de instabilidade, aguarde.');
             })['finally'](function() {
                 self.inprocess = false;
             });
@@ -143,7 +143,7 @@
                 }).then(function (data) {
                     self.deferredHandler(data.data, deferred, data.status);
                 }, function (data) {
-                    self.deferredHandler(data.data, deferred, data.status, 'Unknown error uploading files');
+                    self.deferredHandler(data.data, deferred, data.status, 'Erro ao fazer upload do arquivo');
                 }, function (evt) {
                     self.progress = Math.min(100, parseInt(100.0 * evt.loaded / evt.total)) - 1;
                 })['finally'](function() {
@@ -235,7 +235,7 @@
             var url = this.getUrl(apiUrl, itemPath);
 
             if (!downloadByAjax || forceNewWindow || !$window.saveAs) {
-                !$window.saveAs && $window.console.log('Your browser dont support ajax download, downloading by default');
+                !$window.saveAs && $window.console.log('Seu navegador não suporta o download via ajax, baixando modo padrão');
                 return !!$window.open(url, '_blank', '');
             }
             
@@ -266,7 +266,7 @@
             var url = [apiUrl, $.param(data)].join('?');
 
             if (!downloadByAjax || forceNewWindow || !$window.saveAs) {
-                !$window.saveAs && $window.console.log('Your browser dont support ajax download, downloading by default');
+                !$window.saveAs && $window.console.log('Seu navegador não suporta o download via ajax, baixando modo padrão');
                 return !!$window.open(url, '_blank', '');
             }
             
