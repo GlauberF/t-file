@@ -222,7 +222,6 @@
             var data = {
                 action: 'download',
                 path: path,
-                empId: window.localStorage.e,
                 token: window.localStorage.getItem('vimbo_token')
             };
             // return path && [apiUrl, $.param(data)].join('?');
