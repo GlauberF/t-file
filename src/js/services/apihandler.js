@@ -225,7 +225,7 @@
             // return path && [apiUrl, $.param(data)].join('?');
             console.log('tt', path && [apiUrl, $.param(data)].join('?'));
             console.log('data path ', data.path);
-            console.log('url feita na mao', 'https://vimbo-gestao-ml/storage/' + window.localStorage.e + data.path);
+            console.log('url feita na mao', 'https://vimbo-gestao-ml/storage/empresas/' + window.localStorage.e + data.path);
             console.log('url', apiUrl);
             console.log('data obj ', data);
             return path && [apiUrl, $.param(data)].join('?');
