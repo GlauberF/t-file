@@ -1,12 +1,12 @@
-(function() {
-  'use strict';
+// (function() {
+//   'use strict';
 
-  angular.module('FileManagerApp')
-    .config(config);
+//   angular.module('FileManagerApp')
+//     .config(config);
 
-  config.$inject = ['$httpProvider'];
+//   config.$inject = ['$httpProvider'];
 
-  function config($httpProvider) {
-    $httpProvider.interceptors.push('authInterceptor');
-  }
-})();
+//   function config($httpProvider) {
+//     $httpProvider.interceptors.push('authInterceptor');
+//   }
+// })();
