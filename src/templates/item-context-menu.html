@@ -9,7 +9,7 @@
 
         <li ng-show="config.pickCallback && singleSelection() && singleSelection().isSelectable()">
             <a href="" tabindex="-1" ng-click="config.pickCallback(singleSelection().model)" style="font-weight: 300;">
-                <i class="glyphicon glyphicon-hand-up"></i> {{'select_this' | translate}}
+                <i class="glyphicon glyphicon-hand-up" style="font-size: 20px;"></i> {{'select_this' | translate}}
             </a>
         </li>
 
@@ -69,7 +69,7 @@
 
         <li ng-show="config.allowedActions.compress && (!singleSelection() || selectionHas('dir'))">
             <a href="" tabindex="-1" ng-click="modal('compress')" style="font-weight: 300;">
-                <i class="glyphicon glyphicon-compressed"></i> {{'compress' | translate}}
+                <i class="glyphicon glyphicon-compressed" style="font-size: 20px;"></i> {{'compress' | translate}}
             </a>
         </li>
 
