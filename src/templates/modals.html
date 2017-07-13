@@ -216,8 +216,10 @@
                   <span class="sr-only">{{"close" | translate}}</span>
               </button>
               <button type="button" class="close fullscreen" ng-click="fullscreen=!fullscreen">
-                  <i title="Modo Fullscreen" ng-if="!fullscreen" class="glyphicon icon-fullscreen" style="font-size: 27px;line-height: 0.6;"></i>
-                  <i title="Sair Fullscreen"ng-if="fullscreen" class="glyphicon icon-fullscreen-exit" style="font-size: 27px;line-height: 0.6;"></i>
+                  <md-tooltip md-direction="botton" hide-xs style="background: rgb(3, 155, 229) !important;">Modo fullscreen</md-tooltip>
+                  <i ng-if="!fullscreen" class="glyphicon icon-fullscreen" style="font-size: 27px;line-height: 0.6;"></i>
+                  <md-tooltip md-direction="botton" hide-xs style="background: rgb(3, 155, 229) !important;">Sair do modo fullscreen</md-tooltip>
+                  <i ng-if="fullscreen" class="glyphicon icon-fullscreen-exit" style="font-size: 27px;line-height: 0.6;"></i>
                   <span class="sr-only">{{'toggle_fullscreen' | translate}}</span>
               </button>
               <h4 class="modal-title">{{'edit_file' | translate}}</h4>
