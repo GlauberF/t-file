@@ -14,7 +14,7 @@
         if (localStorage.getItem('vimbo_token')) {
           config.headers.Authorization = 'Bearer ' + localStorage.getItem('vimbo_token');
         }
-        console.log(config.headers);
+        // console.log(config.headers);
         return config;
       }
       // ,

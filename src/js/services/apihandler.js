@@ -4,7 +4,7 @@
         function ($http, $q, $window, $translate, Upload) {
 
         $http.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
-        $http.defaults.headers.common['Authorization'] = 'Bearer ' + localStorage.getItem('vimbo_token');
+        // $http.defaults.headers.common['Authorization'] = 'Bearer ' + localStorage.getItem('vimbo_token');
 
         var ApiHandler = function() {
             this.inprocess = false;
@@ -218,19 +218,13 @@
         };
 
         ApiHandler.prototype.getUrl = function(apiUrl, path) {
-            // jwtR = 'Bearer ' + localStorage.getItem('vimbo_token');
             var data = {
                 action: 'download',
                 path: path,
                 token: window.localStorage.getItem('vimbo_token')
             };
             // return path && [apiUrl, $.param(data)].join('?');
-            console.log('tt', path && [apiUrl, $.param(data)].join('?'));
-            console.log('tt11', path);
-            console.log('data path ', data.path);
-            console.log('url feita na mao', 'https://vimbo-gestao.ml/storage/empresas/' + window.localStorage.e + data.path);
-            console.log('url', apiUrl);
-            console.log('data obj ', data);
+            // console.log('url feita na mao', 'https://vimbo-gestao.ml/storage/empresas/' + window.localStorage.e + data.path);
             return path && [apiUrl, $.param(data)].join('?');
         };
 

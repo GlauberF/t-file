@@ -235,7 +235,7 @@
             create_folder: 'Criar Pasta',
             create: 'Criar',
             folder_name: 'Nome da pasta',
-            upload: 'Fazer',
+            upload: 'Enviar',
             change_permissions: 'Alterar permissões',
             change: 'Alterar',
             details: 'Detalhes',
