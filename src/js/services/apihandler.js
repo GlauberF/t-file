@@ -47,11 +47,11 @@
                 self.error = '';
 
                 // ok - refatorado
-                $http.post(apiUrl, data).then(function(data, code) {
+                $http.post(apiUrl, data).then(function(data) {
                     console.log('listar');
                     console.log(data);
                     console.log(code);
-                    dfHandler(data, deferred, code);
+                    dfHandler(data.data, deferred, data.status);
                 }, function(data, code) {
                     dfHandler(data, deferred, code, 'O servidor esta sofrendo de instabilidade, aguarde.');
                 })['finally'](function() {
