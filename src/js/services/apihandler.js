@@ -48,6 +48,9 @@
 
                 // ok - refatorado
                 $http.post(apiUrl, data).then(function(data, code) {
+                    console.log('listar');
+                    console.log(data);
+                    console.log(code);
                     dfHandler(data, deferred, code);
                 }, function(data, code) {
                     dfHandler(data, deferred, code, 'O servidor esta sofrendo de instabilidade, aguarde.');
