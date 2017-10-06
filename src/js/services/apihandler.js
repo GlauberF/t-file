@@ -48,9 +48,9 @@
 
                 // ok - refatorado
                 $http.post(apiUrl, data).then(function(data) {
-                    console.log('[listar] =>', data);
                     dfHandler(data.data, deferred, data.status);
                 }, function(data) {
+                    console.log('[listar:Erro] =>', data.data);
                     dfHandler(data.data, deferred, data.status, 'O servidor esta sofrendo de instabilidade, aguarde.');
                 })['finally'](function() {
                     self.inprocess = false;
@@ -75,9 +75,9 @@
                 self.inprocess = true;
                 self.error = '';
                 $http.post(apiUrl, data).then(function(data) {
-                    console.log('[copiar] =>', data);
                     self.deferredHandler(data.data, deferred, data.status);
                 }, function(data) {
+                    console.log('[Copiar:Erro] =>', data.data);
                     self.deferredHandler(data.data, deferred, data.status, $translate.instant('error_copying'));
                 })['finally'](function() {
                     self.inprocess = false;
@@ -100,6 +100,7 @@
                 $http.post(apiUrl, data).then(function(data) {
                     self.deferredHandler(data.data, deferred, data.status);
                 }, function(data) {
+                    console.log('[Mover:Erro] =>', data.data);                    
                     self.deferredHandler(data.data, deferred, data.status, $translate.instant('error_moving'));
                 })['finally'](function() {
                     self.inprocess = false;
@@ -121,6 +122,7 @@
                 $http.post(apiUrl, data).then(function(data) {
                     self.deferredHandler(data.data, deferred, data.status);
                 }, function(data) {
+                    console.log('[Remover:Erro] =>', data.data);  
                     self.deferredHandler(data.data, deferred, data.status, $translate.instant('error_deleting'));
                 })['finally'](function() {
                     self.inprocess = false;
@@ -175,6 +177,7 @@
                 $http.post(apiUrl, data).then(function(data) {
                     self.deferredHandler(data.data, deferred, data.status);
                 }, function(data) {
+                    console.log('[getContent:Erro] =>', data.data);  
                     self.deferredHandler(data.data, deferred, data.status, $translate.instant('error_getting_content'));
                 })['finally'](function() {
                     self.inprocess = false;
@@ -197,6 +200,7 @@
                 $http.post(apiUrl, data).then(function(data) {
                     self.deferredHandler(data.data, deferred, data.status);
                 }, function(data) {
+                    console.log('[Editar:Erro] =>', data.data);  
                     self.deferredHandler(data.data, deferred, data.status, $translate.instant('error_modifying'));
                 })['finally'](function() {
                     self.inprocess = false;
@@ -217,6 +221,7 @@
                 $http.post(apiUrl, data).then(function(data) {
                     self.deferredHandler(data.data, deferred, data.status);
                 }, function(data) {
+                    console.log('[Renomear:Erro] =>', data.data);  
                     self.deferredHandler(data.data, deferred, data.status, $translate.instant('error_renaming'));
                 })['finally'](function() {
                     self.inprocess = false;
@@ -253,6 +258,7 @@
                     deferred.resolve(data);
                     $window.saveAs(bin, toFilename);
                 }, function(data) {
+                    console.log('[Download:Erro] =>', data.data);  
                     self.deferredHandler(data.data, deferred, data.status, $translate.instant('error_downloading'));
                 })['finally'](function() {
                     self.inprocess = false;
@@ -284,6 +290,7 @@
                     deferred.resolve(data);
                     $window.saveAs(bin, toFilename);
                 }, function(data) {
+                    console.log('[Multiplo Download:Erro] =>', data.data);  
                     self.deferredHandler(data.data, deferred, data.status, $translate.instant('error_downloading'));
                 })['finally'](function() {
                     self.inprocess = false;
@@ -306,6 +313,7 @@
                 $http.post(apiUrl, data).then(function(data) {
                     self.deferredHandler(data.data, deferred, data.status);
                 }, function(data) {
+                    console.log('[Compactar:Erro] =>', data.data);  
                     self.deferredHandler(data.data, deferred, data.status, $translate.instant('error_compressing'));
                 })['finally'](function() {
                     self.inprocess = false;
@@ -328,6 +336,7 @@
                 $http.post(apiUrl, data).then(function(data) {
                     self.deferredHandler(data.data, deferred, data.status);
                 }, function(data) {
+                    console.log('[Descompactar:Erro] =>', data.data);  
                     self.deferredHandler(data.data, deferred, data.status, $translate.instant('error_extracting'));
                 })['finally'](function() {
                     self.inprocess = false;
@@ -351,6 +360,7 @@
                 $http.post(apiUrl, data).then(function(data) {
                     self.deferredHandler(data.data, deferred, data.status);
                 }, function(data) {
+                    console.log('[Mudar permissões:Erro] =>', data.data);  
                     self.deferredHandler(data.data, deferred, data.status, $translate.instant('error_changing_perms'));
                 })['finally'](function() {
                     self.inprocess = false;
@@ -371,6 +381,7 @@
                 $http.post(apiUrl, data).then(function(data) {
                     self.deferredHandler(data.data, deferred, data.status);
                 }, function(data) {
+                    console.log('[Criar pasta:Erro] =>', data.data);  
                     self.deferredHandler(data.data, deferred, data.status, $translate.instant('error_creating_folder'));
                 })['finally'](function() {
                     self.inprocess = false;
