@@ -192,7 +192,7 @@
             download_as_zip: 'להוריד כמו'
         });
 
-        $translateProvider.translations('pt', {
+        $translateProvider.translations('pt_BR', {
             filemanager: 'Gerenciador de arquivos',
             language: 'Língua',
             english: 'Inglês',
