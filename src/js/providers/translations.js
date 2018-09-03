@@ -2,7 +2,7 @@
     'use strict';
     angular.module('FileManagerApp').config(['$translateProvider', function ($translateProvider) {
         //$translateProvider.useSanitizeValueStrategy(null);
-        $translateProvider.useSanitizeValueStrategy('sanitize');
+        $translateProvider.useSanitizeValueStrategy(['sanitize', 'escapeParameters']);
 
         $translateProvider.translations('en', {
             filemanager: 'File Manager',
