@@ -27,6 +27,9 @@
 ### Use in your existing project
 **1) Install and use**
 ```bower install --save https://github.com/GlauberF/t-file.git```
+```bower install --save glauber-filemanager```
+
+
 
 ---------
 
