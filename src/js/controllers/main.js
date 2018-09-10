@@ -49,6 +49,8 @@
             $translate.use($storage.getItem('language') || fileManagerConfig.defaultLang);
         };
 
+        console.log('dentro do file manager - testes')
+
         $scope.isSelected = function(item) {
             return $scope.temps.indexOf(item) !== -1;
         };
