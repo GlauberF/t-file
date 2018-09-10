@@ -4,6 +4,8 @@
         $translateProvider.useSanitizeValueStrategy(null);
         // $translateProvider.useSanitizeValueStrategy(['sanitize', 'escapeParameters']);
 
+        console.log('translater filemanager');
+
         $translateProvider.translations('en', {
             filemanager: 'File Manager',
             language: 'Language',

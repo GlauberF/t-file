@@ -1,11 +1,11 @@
 {
-  "name": "fuse-angular-filemanager",
+  "name": "glauber-filemanager",
   "version": "1.5.1",
   "homepage": "https://github.com/GlauberF/t-file",
   "authors": [
     "Glauber Funez"
   ],
-  "description": "A filemanager to vimbo.",
+  "description": "A filemanager.",
   "main": [
     "bower_components/bootswatch/paper/bootstrap.min.css",
     "dist/angular-filemanager.min.css",
