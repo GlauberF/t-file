@@ -55,7 +55,7 @@
                 remove: true,
                 createFolder: true,
                 pickFiles: false,
-                pickFolders: true
+                pickFolders: false
             },
 
             multipleDownloadFileName: 'angular-filemanager.zip',

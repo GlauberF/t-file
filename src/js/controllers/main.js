@@ -49,6 +49,11 @@
             $translate.use($storage.getItem('language') || fileManagerConfig.defaultLang);
         };
 
+        if ($storage.getItem('language')) {            
+            $scope.changeLanguage($storage.getItem('language'))
+            console.log('tem storage filemanager', $storage.getItem('language'))
+        }
+
         console.log('dentro do file manager - testes')
         var currentLang = $translate.proposedLanguage() || $translate.use();
         console.log('currentLang file manager - testes', currentLang)
@@ -359,7 +364,7 @@
             return found[0] && found[0].split('=')[1] || undefined;
         };
 
-        $scope.changeLanguage(getQueryParam('lang'));
+        // $scope.changeLanguage(getQueryParam('lang'));
         $scope.isWindows = getQueryParam('server') === 'Windows';
         $scope.fileNavigator.refresh();
 
