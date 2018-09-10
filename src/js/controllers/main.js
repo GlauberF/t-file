@@ -50,6 +50,9 @@
         };
 
         console.log('dentro do file manager - testes')
+        var currentLang = $translate.proposedLanguage() || $translate.use();
+        console.log('currentLang file manager - testes', currentLang)
+
 
         $scope.isSelected = function(item) {
             return $scope.temps.indexOf(item) !== -1;
@@ -348,9 +351,11 @@
         };
 
         var getQueryParam = function(param) {
+            console.log('param filemanager', param)
             var found = $window.location.search.substr(1).split('&').filter(function(item) {
                 return param ===  item.split('=')[0];
             });
+            console.log('param filemanager 1', found)
             return found[0] && found[0].split('=')[1] || undefined;
         };
 
