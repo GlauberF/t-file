@@ -42,24 +42,16 @@
         };
 
         $scope.changeLanguage = function (locale) {
-            console.log('chamou change')
             if (locale) {
-                console.log('dentor do if do change')
                 $storage.setItem('language', locale);
                 return $translate.use(locale);
             }
             $translate.use($storage.getItem('language') || fileManagerConfig.defaultLang);
         };
 
-        if ($storage.getItem('language')) {            
-            $scope.changeLanguage($storage.getItem('language'))
-            console.log('tem storage filemanager', $storage.getItem('language'))
-        }
-
-        console.log('dentro do file manager - testes')
-        var currentLang = $translate.proposedLanguage() || $translate.use();
-        console.log('currentLang file manager - testes', currentLang)
-
+        // if ($storage.getItem('language')) {            
+        //     $scope.changeLanguage($storage.getItem('language'))
+        // }
 
         $scope.isSelected = function(item) {
             return $scope.temps.indexOf(item) !== -1;
