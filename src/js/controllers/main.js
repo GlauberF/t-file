@@ -42,7 +42,9 @@
         };
 
         $scope.changeLanguage = function (locale) {
+            console.log('chamou change')
             if (locale) {
+                console.log('dentor do if do change')
                 $storage.setItem('language', locale);
                 return $translate.use(locale);
             }
