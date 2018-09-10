@@ -4,7 +4,8 @@
 
         var values = {
             appName: 'angular-filemanager v1.5',
-            defaultLang: 'en',
+            // defaultLang: 'en',
+            defaultLang: 'pt_BR',
 
             // listUrl: 'bridges/php/handler.php',
             // uploadUrl: 'bridges/php/handler.php',
@@ -54,7 +55,7 @@
                 remove: true,
                 createFolder: true,
                 pickFiles: false,
-                pickFolders: false
+                pickFolders: true
             },
 
             multipleDownloadFileName: 'angular-filemanager.zip',
