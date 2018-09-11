@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700");
+@import url("https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css");
+
 
 html {
   font-family: sans-serif;
@@ -253,7 +255,7 @@ th {
   .table-bordered th,
   .table-bordered td {
     border: 1px solid #ddd !important; } }
-    
+
 /*@font-face {
   font-family: 'Glyphicons Halflings';
   src: url("../fonts/glyphicons-halflings-regular.eot");
