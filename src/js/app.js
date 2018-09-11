@@ -15,8 +15,6 @@
         $('#context-menu').hide();
     });
 
-    console.log('dentro do file manager app - testes')
-
     function getCordinates(e) {
         var m_posx = 0, m_posy = 0, e_posx = 0, e_posy = 0;
         if (!e) { e = window.event; }
