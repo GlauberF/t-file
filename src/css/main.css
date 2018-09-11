@@ -274,13 +274,13 @@ body {
   padding: 0;
   /*font-size: 15px;*/
   font-size: 15px;
-  font-weight: 400;
+  /*font-weight: 300;*/
 
   /*font-size: 17px;*/
   margin: 12px 0;
   overflow: hidden;
   max-height: 30px;
-  font-weight: 300; 
+  font-weight: 400; 
 }
 #fileManagerParent .breadcrumb > .active,
 #fileManagerParent .breadcrumb a {
