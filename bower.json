@@ -7,7 +7,6 @@
   ],
   "description": "A filemanager.",
   "main": [
-    "bower_components/bootswatch/paper/bootstrap.min.css",
     "dist/angular-filemanager.min.css",
     "dist/angular-filemanager.min.js"    
   ],
