@@ -173,6 +173,13 @@
             element.modal(hide ? 'hide' : 'show');
             $scope.apiMiddleware.apiHandler.error = '';
             $scope.apiMiddleware.apiHandler.asyncSuccess = false;
+
+            $(document).ready(function() {
+                $('textarea').each(function(i, block) {
+                    hljs.highlightBlock(block);
+                });
+            });            
+
             return returnElement ? element : true;
         };
 
