@@ -20,6 +20,12 @@
         $scope.fileList = [];
         $scope.temps = [];
 
+        $(document).ready(function() {
+                $('pre code').each(function(i, block) {
+                    hljs.highlightBlock(block);
+                });
+            }); 
+
         $scope.$watch('temps', function() {
             if ($scope.singleSelection()) {
                 $scope.temp = $scope.singleSelection();
@@ -175,7 +181,7 @@
             $scope.apiMiddleware.apiHandler.asyncSuccess = false;
 
             $(document).ready(function() {
-                $('textarea').each(function(i, block) {
+                $('pre code').each(function(i, block) {
                     hljs.highlightBlock(block);
                 });
             });            

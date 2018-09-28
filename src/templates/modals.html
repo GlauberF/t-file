@@ -225,8 +225,8 @@
             <div class="modal-body">
                 <label class="radio bold">{{ singleSelection().model.fullPath() }}</label>
                 <span class="label label-warning" ng-show="apiMiddleware.apiHandler.inprocess">{{'loading' | translate}} ...</span>
-                <textarea class="form-control code" ng-model="singleSelection().tempModel.content" ng-show="!apiMiddleware.apiHandler.inprocess" autofocus="autofocus"></textarea>
-                <!-- <pre style=""><code class="hljs" ng-show="!apiMiddleware.apiHandler.inprocess">{{ ingleSelection().tempModel.content }}</code></pre> -->
+                <!-- <textarea class="form-control code" ng-model="singleSelection().tempModel.content" ng-show="!apiMiddleware.apiHandler.inprocess" autofocus="autofocus"></textarea> -->
+                <pre style=""><code class="{{ singleSelection().model.fullPath().split('.')[1] }} hljs" ng-show="!apiMiddleware.apiHandler.inprocess">{{ ingleSelection().tempModel.content }}</code></pre>
                 <div ng-include data-src="'error-bar'" class="clearfix"></div>
             </div>
             <div class="modal-footer">
