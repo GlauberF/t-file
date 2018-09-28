@@ -1,5 +1,8 @@
 #fileManagerParent .modal {
-  word-wrap: break-word; }
+  word-wrap: break-word;
+  background-color: rgba(33, 33, 33, 0.48) !important;
+  opacity: .48; 
+}
 #fileManagerParent .modal .label.error-msg {
   display: block;
   font-size: 12px;
@@ -34,7 +37,8 @@
   -webkit-box-shadow: inherit;
   -moz-box-shadow: inherit;
   -o-box-shadow: inherit;
-  box-shadow: inherit; }
+  box-shadow: inherit; 
+}
 #fileManagerParent .modal-fullscreen textarea.code {
   min-height: 450px; }
 #fileManagerParent .modal img.preview {

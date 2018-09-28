@@ -4,10 +4,9 @@
     $translateProvider.useSanitizeValueStrategy(null);
     // $translateProvider.useSanitizeValueStrategy(['sanitize', 'escapeParameters']);
 
-    console.log('translater filemanager');
-
     $translateProvider.translations('en', {
       filemanager: 'File Manager',
+      filemanager_navbar: 'Storage, Management and Exchange of files electronically',
       language: 'Language',
       english: 'English',
       spanish: 'Spanish',
@@ -197,6 +196,7 @@
 
     $translateProvider.translations('pt_BR', {
       filemanager: 'Gerenciador de arquivos',
+      filemanager_navbar: 'Armazenamento, Gerenciamento e Troca de arquivos eletronicamente',
       language: 'Língua',
       english: 'Inglês',
       spanish: 'Espanhol',

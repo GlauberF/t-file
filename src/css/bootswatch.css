@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700");
+@import url("https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css");
+
 
 html {
   font-family: sans-serif;
@@ -253,10 +255,13 @@ th {
   .table-bordered th,
   .table-bordered td {
     border: 1px solid #ddd !important; } }
-@font-face {
+
+/*@font-face {
   font-family: 'Glyphicons Halflings';
   src: url("../fonts/glyphicons-halflings-regular.eot");
   src: url("../fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/glyphicons-halflings-regular.woff2") format("woff2"), url("../fonts/glyphicons-halflings-regular.woff") format("woff"), url("../fonts/glyphicons-halflings-regular.ttf") format("truetype"), url("../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg"); }
+*/
+
 .glyphicon {
   position: relative;
   top: 1px;
@@ -4971,8 +4976,10 @@ pre code {
   border: 1px solid #999999;
   border: 1px solid transparent;
   border-radius: 3px;
-  -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
-  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+  /*-webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);*/
+  -webkit-box-shadow: none;
+  box-shadow: none;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
   outline: 0; }
@@ -5023,8 +5030,11 @@ pre code {
     width: 600px;
     margin: 30px auto; }
   #fileManagerParent .modal-content {
-    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); }
+    /*-webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); */
+    -webkit-box-shadow: none;
+    box-shadow: none; 
+  }
   #fileManagerParent .modal-sm {
     width: 300px; } }
 @media (min-width: 992px) {

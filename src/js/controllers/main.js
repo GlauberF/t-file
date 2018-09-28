@@ -350,15 +350,13 @@
         };
 
         var getQueryParam = function(param) {
-            console.log('param filemanager', param)
             var found = $window.location.search.substr(1).split('&').filter(function(item) {
                 return param ===  item.split('=')[0];
             });
-            console.log('param filemanager 1', found)
             return found[0] && found[0].split('=')[1] || undefined;
         };
 
-        // $scope.changeLanguage(getQueryParam('lang'));
+        $scope.changeLanguage(getQueryParam('lang'));
         $scope.isWindows = getQueryParam('server') === 'Windows';
         $scope.fileNavigator.refresh();
 
